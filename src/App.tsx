@@ -49,7 +49,7 @@ function App() {
             <span className="tag">REACT • GITHUB • AZURE DEVOPS</span>
 
             <h1>
-              Install and deploy
+              Install and deploy learning
               <span> automatically</span>
             </h1>
 
