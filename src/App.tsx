@@ -1,27 +1,27 @@
-import './App.css'
+import "./App.css";
 
 const flowSteps = [
   {
-    number: '01',
-    title: 'Develop',
-    description: 'Create and test the React application locally.',
+    number: "01",
+    title: "Develop",
+    description: "Create and test the React application locally.",
   },
   {
-    number: '02',
-    title: 'Push',
-    description: 'Commit the changes and push them to GitHub.',
+    number: "02",
+    title: "Push",
+    description: "Commit the changes and push them to GitHub.",
   },
   {
-    number: '03',
-    title: 'Build',
-    description: 'Azure DevOps validates and builds the application.',
+    number: "03",
+    title: "Build",
+    description: "Azure DevOps validates and builds the application.",
   },
   {
-    number: '04',
-    title: 'Deploy',
-    description: 'The production files are deployed to Azure Storage.',
+    number: "04",
+    title: "Deploy",
+    description: "The production files are deployed to Azure Storage.",
   },
-]
+];
 
 function App() {
   return (
@@ -49,7 +49,7 @@ function App() {
             <span className="tag">REACT • GITHUB • AZURE DEVOPS</span>
 
             <h1>
-              Build and deploy React
+              Install and deploy
               <span> automatically</span>
             </h1>
 
@@ -126,7 +126,7 @@ function App() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
