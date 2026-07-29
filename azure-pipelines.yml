@@ -32,3 +32,22 @@ steps:
       artifact: 'react-dist'
       publishLocation: 'pipeline'
     displayName: 'Publish dist artifact'
+
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: 'sc-cicd-react-azure'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        echo "Deploying React application to Azure Storage..."
+
+        az storage blob upload-batch \
+          --account-name stcicdreactkasturi \
+          --destination '$web' \
+          --source "$(System.DefaultWorkingDirectory)/dist" \
+          --overwrite true \
+          --auth-mode login \
+          --only-show-errors
+
+        echo "Deployment completed successfully."
+    displayName: 'Deploy React app to Azure Static Website'
