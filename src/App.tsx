@@ -257,7 +257,7 @@ function App() {
         <header className="topbar">
           <div>
             <p className="breadcrumb">Projects / React Deployment</p>
-            <h1>React CI/CD Dashboard - Deployment Test 2</h1>
+            <h1>React CI/CD Dashboard</h1>
           </div>
 
           <div className="topbar-actions">
